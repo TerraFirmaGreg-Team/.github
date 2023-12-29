@@ -1,7 +1,4 @@
 <div align="center">
-  <a href="https://modrinth.com/modpack/terrafirmagreg/versions?g=1.12.2">
-  <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact/available/modrinth_vector.svg" alt="Available on Modrinth"></a>
-
   <a href="https://discord.gg/terrafirmagreg">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3.1.2/assets/compact/social/discord-singular_vector.svg" alt="Chat on Discord"></a>
 
