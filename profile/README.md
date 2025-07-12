@@ -8,4 +8,4 @@
 </div>
 <br/>
 
-![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/title/large.png?raw=true)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/title/v3/5032x1024_with_stars.png?raw=true)
