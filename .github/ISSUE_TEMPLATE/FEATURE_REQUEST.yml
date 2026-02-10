@@ -1,6 +1,6 @@
-name: "[🪶]: Feature request"
+name: "[💡]: Feature request"
 description: "Request a new feature or a change to an existing one."
-title: "[🪶]: "
+title: "[💡]: "
 labels: [ "Status: Backlog" ]
 projects: ["TerraFirmaGreg-Team/16"]
 type: "Feature"
@@ -21,7 +21,7 @@ body:
       required: false
     attributes:
       label: "Related problem"
-      description: If the feature you wish to change is related to a problem, please desscribe it. Leave this field blank if it is not related to a problem.
+      description: "If the feature you wish to change is related to a problem, please desscribe it. Leave this field blank if it is not related to a problem."
       placeholder: "Example: I'm always frustrated when..."
 
   - type: textarea
@@ -30,7 +30,7 @@ body:
       required: true
     attributes:
       label: "Your solution"
-      description: Describe the solution you would like to have happen.
+      description: "Describe the solution you would like to have happen."
       placeholder: "Example: If I could..."
 
   - type: textarea
@@ -39,9 +39,10 @@ body:
       required: false
     attributes:
       label: "Additional information"
-      description: Any additional information you wish to provide. Please add anything which did not fit into the other sections here.
+      description: "Any additional information you wish to provide. Please add anything which did not fit into the other sections here."
       placeholder: "Example: This is likely achieveable by doing X because..."
 
   - type: markdown
     attributes:
-      value: "Thanks for taking the time to fill out this feature request."
+      value: |
+        Thanks for taking the time to fill out this feature request.

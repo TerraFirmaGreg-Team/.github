@@ -10,7 +10,7 @@ body:
     id: exists
     attributes:
       label: "Was this bug reported before?"
-      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      description: "Please search OPEN/CLOSED issues before submitting, as the issue may have already been reported/addressed."
       options:
         - label: "No, it was not."
           required: true
@@ -53,4 +53,5 @@ body:
 
   - type: markdown
     attributes:
-      value: Thank you for taking the time to fill out this bug report.
+      value: |
+        Thank you for taking the time to fill out this bug report.
