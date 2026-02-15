@@ -3,77 +3,77 @@
 # These labels will be synced to the repository by the label-sync workflow
 
 # Priority Labels
-- name: Priority: Critical
+- name: "Priority: Critical"
   color: ee0701
   description: Must be addressed as soon as possible.
 
-- name: Priority: High
+- name: "Priority: High"
   color: D93F0B
   description: Issue or PR should be prioritized for reviews.
 
-- name: Priority: Long-term plans
+- name: "Priority: Long-term plans"
   color: BFD4F2
   description: Planned for future implementation.
 
-- name: Priority: Low
+- name: "Priority: Low"
   color: 1D76DB
   description: Low priority.
 
-- name: Priority: Medium
+- name: "Priority: Medium"
   color: 0E8A16
   description: Important but not urgent.
 
 # Pull Request Labels
-- name: Pull request: Dependencies
+- name: "Pull request: Dependencies"
   color: 0366d6
   description: Pull requests that update a dependency file.
 
-- name: Pull request: Refactor
+- name: "Pull request: Refactor"
   color: fe2275
   description: Structural improvements.
 
-- name: Pull request: Translation
+- name: "Pull request: Translation"
   color: 4C6DD0
   description: The request concerns translation.
 
 # Status Labels
-- name: Status:  Help wanted
+- name: "Status:  Help wanted"
   color: A84740
   description: Extra attention is needed.
 
-- name: Status: Backlog
+- name: "Status: Backlog"
   color: 3F4F4E
   description: Pending tasks.
 
-- name: Status: Cannot reproduce
+- name: "Status: Cannot reproduce"
   color: A45D0F
   description: We can't reproduce the issue.
 
-- name: Status: Confirmed
+- name: "Status: Confirmed"
   color: 83F727
   description: Bug confirmed.
 
-- name: Status: Done
+- name: "Status: Done"
   color: 4F38A2
   description: This has already been done.
 
-- name: Status: Dropped
+- name: "Status: Dropped"
   color: B60205
   description: Not viable at the moment, or considered and declined. Can be reevaluated.
 
-- name: Status: In Progress
+- name: "Status: In Progress"
   color: A68C0C
   description: This is actively being worked on.
 
-- name: Status: Not Our Issue
+- name: "Status: Not Our Issue"
   color: E938DF
   description: Not our issue.
 
-- name: Status: Unverified
+- name: "Status: Unverified"
   color: 36C8A2
   description: Bug unverified.
 
-- name: Status: Wontfix
+- name: "Status: Wontfix"
   color: ffffff
   description: This will not be worked on.
 
