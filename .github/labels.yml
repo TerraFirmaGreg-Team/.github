@@ -6,70 +6,87 @@
 - name: "Priority: Critical"
   color: ee0701
   description: Must be addressed as soon as possible.
+  aliases: ["critical", "urgent"]
 
 - name: "Priority: High"
   color: D93F0B
   description: Issue or PR should be prioritized for reviews.
+  aliases: ["high", "important"]
 
 - name: "Priority: Long-term plans"
   color: BFD4F2
   description: Planned for future implementation.
+  aliases: ["long-term", "future", "later"]
 
 - name: "Priority: Low"
   color: 1D76DB
   description: Low priority.
+  aliases: ["low", "minor"]
 
 - name: "Priority: Medium"
   color: 0E8A16
   description: Important but not urgent.
+  aliases: ["medium", "normal"]
 
 # Pull Request Labels
 - name: "Pull request: Dependencies"
   color: 0366d6
   description: Pull requests that update a dependency file.
+  aliases: ["dependencies", "deps", "dependency-update"]
 
 - name: "Pull request: Refactor"
   color: fe2275
   description: Structural improvements.
+  aliases: ["refactor", "cleanup", "restructure"]
 
 - name: "Pull request: Translation"
   color: 4C6DD0
   description: The request concerns translation.
+  aliases: ["translation", "i18n", "locale", "lang"]
 
 # Status Labels
 - name: "Status: Dropped"
   color: B60205
   description: Not viable at the moment, or considered and declined. Can be reevaluated.
+  aliases: ["dropped", "declined", "rejected"]
 
 - name: "Status: Backlog"
   color: 3F4F4E
   description: Pending tasks.
+  aliases: ["backlog", "pending", "todo"]
 
 - name: "Status: Ready"
   color: 83F727
   description: The task is ready to work.
+  aliases: ["ready", "available", "unassigned"]
 
 - name: "Status: In Progress"
   color: A68C0C
   description: This is actively being worked on.
+  aliases: ["in-progress", "wip", "working"]
 
 - name: "Status: Done"
   color: 4F38A2
   description: This has already been done.
+  aliases: ["done", "completed", "finished", "resolved"]
 
 # Triage Labels
 - name: "Triage: Cannot reproduce"
   color: A45D0F
   description: We can't reproduce the issue.
+  aliases: ["cannot-reproduce", "unreproducible"]
 
 - name: "Triage: Help wanted"
   color: A84740
   description: Extra attention is needed.
+  aliases: ["help-wanted", "help", "assistance-needed"]
 
 - name: "Triage: Not Our Issue"
   color: E938DF
   description: Not our issue.
+  aliases: ["not-our-issue", "external", "upstream"]
 
 - name: "Triage: Wontfix"
   color: ffffff
   description: This will not be worked on.
+  aliases: ["wontfix", "declined", "rejected"]
