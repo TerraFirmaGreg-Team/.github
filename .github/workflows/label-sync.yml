@@ -31,7 +31,6 @@ jobs:
         with:
           manifest: .github/labels/labels.yml
           repository: ${{ matrix.repository }}
-          delete-other-labels: true
-          skip-if-updated: true
+          prune: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
