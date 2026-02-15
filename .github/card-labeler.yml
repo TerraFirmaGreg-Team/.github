@@ -1,0 +1,26 @@
+
+
+# Status columns
+Dropped:
+  - 'Status: Dropped'
+Backlog:
+  - 'Status: Backlog'
+Ready:
+  - 'Status: Ready'
+In Progress:
+  - 'Status: In Progress'
+Done:
+  - 'Status: Done'
+
+
+# Priority columns  
+Critical:
+  - 'Priority: Critical'
+High:
+  - 'Priority: High'
+Medium:
+  - 'Priority: Medium'
+Low:
+  - 'Priority: Low'
+'Long-term plans':
+  - 'Priority: Long-term plans'
