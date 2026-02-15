@@ -1,0 +1,37 @@
+name: Label Sync
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/labels/labels.yml'
+      - '.github/labels/labels.yaml'
+  workflow_dispatch:
+
+jobs:
+  label-sync:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repository:
+          - TerraFirmaGreg-Team/Modpack-Modern
+          - TerraFirmaGreg-Team/Modpack-Vintage
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sync labels to ${{ matrix.repository }}
+        uses: micnncim/action-label-syncer@v2
+        with:
+          manifest: .github/labels/labels.yml
+          repository: ${{ matrix.repository }}
+          delete-other-labels: true
+          skip-if-updated: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
