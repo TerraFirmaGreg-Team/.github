@@ -22,7 +22,6 @@ jobs:
         uses: srealmoreno/label-sync-action@v2
         with:
           config-file: .github/labels.yml
-          token: ${{ secrets.GITHUB_TOKEN }}
           clean-labels: true
           auto-discover-repos: true
           owner: TerraFirmaGreg-Team
