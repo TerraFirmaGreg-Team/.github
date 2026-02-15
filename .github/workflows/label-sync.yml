@@ -31,6 +31,5 @@ jobs:
         with:
           manifest: .github/labels/labels.yml
           repository: ${{ matrix.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           prune: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
