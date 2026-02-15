@@ -42,7 +42,7 @@ jobs:
         if: contains(github.event.issue.labels.*.name, matrix.label)
         with:
           action-token: "${{ secrets.GITHUB_TOKEN }}"
-          project-url: "${{ github.event.repository.url }}/projects/16"
+          project-url: "https://github.com/orgs/TerraFirmaGreg-Team/projects/16"
           column-name: "${{ matrix.column }}"
           label-name: "${{ matrix.label }}"
 
