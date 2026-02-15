@@ -37,43 +37,39 @@
   description: The request concerns translation.
 
 # Status Labels
-- name: "Status:  Help wanted"
-  color: A84740
-  description: Extra attention is needed.
+- name: "Status: Dropped"
+  color: B60205
+  description: Not viable at the moment, or considered and declined. Can be reevaluated.
 
 - name: "Status: Backlog"
   color: 3F4F4E
   description: Pending tasks.
 
-- name: "Status: Cannot reproduce"
-  color: A45D0F
-  description: We can't reproduce the issue.
-
-- name: "Status: Confirmed"
+- name: "Status: Ready"
   color: 83F727
-  description: Bug confirmed.
-
-- name: "Status: Done"
-  color: 4F38A2
-  description: This has already been done.
-
-- name: "Status: Dropped"
-  color: B60205
-  description: Not viable at the moment, or considered and declined. Can be reevaluated.
+  description: The task is ready to work.
 
 - name: "Status: In Progress"
   color: A68C0C
   description: This is actively being worked on.
 
-- name: "Status: Not Our Issue"
+- name: "Status: Done"
+  color: 4F38A2
+  description: This has already been done.
+
+# Triage Labels
+- name: "Triage: Cannot reproduce"
+  color: A45D0F
+  description: We can't reproduce the issue.
+
+- name: "Triage: Help wanted"
+  color: A84740
+  description: Extra attention is needed.
+
+- name: "Triage: Not Our Issue"
   color: E938DF
   description: Not our issue.
 
-- name: "Status: Unverified"
-  color: 36C8A2
-  description: Bug unverified.
-
-- name: "Status: Wontfix"
+- name: "Triage: Wontfix"
   color: ffffff
   description: This will not be worked on.
-
