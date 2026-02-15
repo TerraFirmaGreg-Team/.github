@@ -18,11 +18,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6.0.2
 
-      - name: Sync labels to ${{ matrix.repository }}
+      - name: Sync labels
         uses: srealmoreno/label-sync-action@v2
         with:
           config-file: .github/labels.yml
+          token: ${{ secrets.GITHUB_PAT }}
           clean-labels: true
           auto-discover-repos: true
+          owner: TerraFirmaGreg-Team
           account-type: org
           exclude-forked-repos: false
