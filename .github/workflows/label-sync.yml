@@ -13,15 +13,6 @@ on:
 jobs:
   label-sync:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        repository:
-          - TerraFirmaGreg-Team/Modpack-Modern
-          - TerraFirmaGreg-Team/Modpack-Vintage
-    permissions:
-      issues: write
-      pull-requests: write
-      contents: read
 
     steps:
       - name: Checkout repository
@@ -31,9 +22,10 @@ jobs:
         uses: srealmoreno/label-sync-action@v2
         with:
           config-file: .github/labels.yml
-          repositories: ${{ matrix.repository }}
           token: ${{ secrets.GITHUB_TOKEN }}
           clean-labels: true
           auto-discover-repos: true
           owner: TerraFirmaGreg-Team
           account-type: org
+          exclude-forked-repos: false
+          exclude-private-repos: false
