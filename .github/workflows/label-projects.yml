@@ -2,8 +2,8 @@ name: Sync Labels and Projects
 run-name: "🔄 Sync Labels & Projects"
 
 on:
-  issues:
-    types: [labeled, unlabeled, opened, edited]
+  # issues:
+  #   types: [labeled, unlabeled, opened, edited]
   project_card:
     types: [moved]
 
@@ -56,4 +56,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Auto card labeler
-        uses: technote-space/auto-card-labeler@v2
+        uses: technote-space/auto-card-labeler@v2.1.2
