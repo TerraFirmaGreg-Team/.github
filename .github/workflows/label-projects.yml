@@ -4,6 +4,8 @@ run-name: "🔄 Sync Labels & Projects"
 on:
   project_card:
     types: [moved, created]
+  issues:
+    types: [labeled, unlabeled]
 
 jobs:
 
