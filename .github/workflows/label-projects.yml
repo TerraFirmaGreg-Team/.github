@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Auto card labeler
-        uses: technote-space/auto-card-labeler@v2.1.2
+        uses: Xikaro/sync-card-labeler@v3.0.1
