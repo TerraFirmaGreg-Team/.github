@@ -50,7 +50,6 @@ jobs:
   sync-projects-to-labels:
     name: "📋 Projects → Labels"
     runs-on: ubuntu-latest
-    if: github.event_name == 'project_card'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
