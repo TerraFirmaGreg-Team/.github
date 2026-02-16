@@ -2,10 +2,10 @@ name: Sync Labels and Projects
 run-name: "🔄 Sync Labels & Projects"
 
 on:
-  # issues:
-  #   types: [labeled, unlabeled, opened, edited]
+  issues:
+    types: [labeled, unlabeled, opened, edited]
   project_card:
-    types: [moved]
+    types: [moved, created]
 
 jobs:
   # Labels → Projects: Move cards based on label changes
