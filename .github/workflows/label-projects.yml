@@ -3,13 +3,13 @@ run-name: "🔄 Sync Labels & Projects"
 
 on:
   project_card:
-    types: [moved, created]
+    types: [created, moved, converted, deleted]
   issues:
-    types: [labeled, unlabeled]
+    types: [opened, edited, closed, reopened, labeled, unlabeled]
 
 jobs:
 
-  # Projects → Labels: Update labels when cards are moved
+
   sync-projects-to-labels:
     name: "📋 Projects → Labels"
     runs-on: ubuntu-latest
