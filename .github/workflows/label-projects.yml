@@ -2,49 +2,10 @@ name: Sync Labels and Projects
 run-name: "🔄 Sync Labels & Projects"
 
 on:
-  issues:
-    types: [labeled, unlabeled, opened, edited]
   project_card:
     types: [moved, created]
 
 jobs:
-  # Labels → Projects: Move cards based on label changes
-  # sync-labels-to-projects:
-  #   name: "🏷️ Labels → Projects"
-  #   runs-on: ubuntu-latest
-  #   if: github.event_name == 'issues'
-  #   strategy:
-  #     matrix:
-  #       include:
-  #         - label: "Status: Backlog"
-  #           column: "Backlog"
-  #         - label: "Status: Ready"
-  #           column: "Ready"
-  #         - label: "Status: In Progress"
-  #           column: "In Progress"
-  #         - label: "Status: Done"
-  #           column: "Done"
-  #         - label: "Status: Dropped"
-  #           column: "Dropped"
-  #         - label: "Priority: Critical"
-  #           column: "Critical"
-  #         - label: "Priority: High"
-  #           column: "High"
-  #         - label: "Priority: Medium"
-  #           column: "Medium"
-  #         - label: "Priority: Low"
-  #           column: "Low"
-  #         - label: "Priority: Long-term plans"
-  #           column: "Long-term plans"
-  #   steps:
-  #     - name: Move to ${{ matrix.column }}
-  #       uses: konradpabjan/move-labeled-or-milestoned-issue@v2.0
-  #       if: contains(github.event.issue.labels.*.name, matrix.label)
-  #       with:
-  #         action-token: "${{ secrets.GITHUB_TOKEN }}"
-  #         project-url: "https://github.com/orgs/TerraFirmaGreg-Team/projects/16"
-  #         column-name: "${{ matrix.column }}"
-  #         label-name: "${{ matrix.label }}"
 
   # Projects → Labels: Update labels when cards are moved
   sync-projects-to-labels:

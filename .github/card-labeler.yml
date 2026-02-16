@@ -1,26 +1,27 @@
 
 
 # Status columns
-Dropped:
-  - 'Status: Dropped'
-Backlog:
-  - 'Status: Backlog'
-Ready:
-  - 'Status: Ready'
-In Progress:
-  - 'Status: In Progress'
-Done:
-  - 'Status: Done'
+Roadmap-Team:
+  Dropped:
+    - 'Status: Dropped'
+  Backlog:
+    - 'Status: Backlog'
+  Ready:
+    - 'Status: Ready'
+  In Progress:
+    - 'Status: In Progress'
 
 
-# Priority columns  
-Critical:
-  - 'Priority: Critical'
-High:
-  - 'Priority: High'
-Medium:
-  - 'Priority: Medium'
-Low:
-  - 'Priority: Low'
-'Long-term plans':
-  - 'Priority: Long-term plans'
+
+# Priority columns
+Roadmap-Team:
+  Critical:
+    - 'Priority: Critical'
+  High:
+    - 'Priority: High'
+  Medium:
+    - 'Priority: Medium'
+  Low:
+    - 'Priority: Low'
+  'Long-term plans':
+    - 'Priority: Long-term plans'
